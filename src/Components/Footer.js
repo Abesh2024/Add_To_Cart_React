@@ -1,18 +1,25 @@
-function Footer(props) {
-    const deleteData = () => {
-        props.delete();
-    }
-    return (
-        <div style={{ width:"68vw",marginLeft:'200px'}}>
-            <hr />
-            <div style={{ display: 'flex', justifyContent:'space-between',fontSize:'24px'}}>
-                <p>Total</p>
-                <p>$2199.96</p>
-            </div>
-            <div style={{margin:'0 40%'}}>
-                <button onClick={deleteData}>clear cart</button>
-            </div>
-        </div>
-    );
+import React from "react";
+import "./Footer.css";
+
+ const Footer = ( {...props} ) => {
+    // console.log(setTotal, total);
+
+        return <div className = "footerDiv">
+       <>
+       <p>Total : {props.total}</p>
+       </>
+        <>
+        <button
+          onClick={() => {
+            props.setProducts([]);
+            props.setTotal(0);
+            props.setQuantity(0);
+          }}
+        className= "clarBtn">
+          clear cart
+        </button>
+        </>
+      </div>
 }
+
 export default Footer;

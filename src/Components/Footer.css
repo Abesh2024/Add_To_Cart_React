@@ -1,0 +1,6 @@
+.mainDiv {
+    display: flex;
+    /* background-color: antiquewhite; */
+    /* color: aqua; */
+    justify-content: space-around;
+}

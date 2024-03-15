@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.nav-style {
+    background-color: rgb(40,44,52);
+    color: #fff;
+    font-weight: 700;
+}
+
+.cart_icon {
+    color: red;
+}
+
+.nav-head {
+    padding-right: 30rem;
+}

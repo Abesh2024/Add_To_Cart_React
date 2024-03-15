@@ -1,0 +1,16 @@
+.footerDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    margin-top: 6rem;
+    align-items: center;
+    background-color: rgb(231, 177, 125);
+}
+
+.clarBtn {
+    background-color: aqua;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+}
